@@ -1,0 +1,93 @@
+.startPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+  transform: translateY(0px);
+  position: absolute;
+  width: 100%;
+  z-index: 2000;
+}
+
+.card {
+  background-color: white;
+  transition: 1s;
+  position: relative;
+  height: 380px;
+}
+
+.card:hover {
+  opacity: 1;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.card img {
+  height: 300px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.card-client {
+  opacity: 1;
+  margin: 0;
+  transition: 1s;
+  transform: translateX(140px);
+  position: relative;
+  z-index: 100;
+}
+
+.card-admin {
+  opacity: 1;
+  transition: 1s;
+  transform: translateX(-140px);
+  position: relative;
+  z-index: 100;
+}
+
+.card-none-client {
+  opacity: 0.5;
+}
+.card-none-client button {
+  display: none;
+}
+.card-none-client:hover {
+  opacity: 0.8;
+}
+
+.card-none-admin {
+  opacity: 0.5;
+}
+
+.card-none-admin button {
+  display: none;
+}
+
+.card-none-admin:hover {
+  opacity: 0.8;
+}
+
+.card-cli {
+  transform: translateX(140px);
+  z-index: 120;
+}
+
+.card-adm {
+  opacity: 0.5;
+}
+.card-adm button {
+  display: none;
+}
+
+.startPage-none {
+  transition: 0.9s;
+  transform: translateY(-1000px);
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}

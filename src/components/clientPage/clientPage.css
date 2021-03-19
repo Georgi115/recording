@@ -1,0 +1,401 @@
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+.list-group-view-service {
+}
+
+.list-group-item span {
+  margin-left: auto;
+}
+
+.list-group {
+  transition: 0.5s;
+  width: 100%;
+}
+
+.list-group-none-services {
+  transform: translateX(-2000px);
+  width: 0%;
+}
+.groupContainer {
+  display: flex;
+}
+
+.list-group-none-master {
+  transform: translateX(2000px);
+  width: 0%;
+}
+
+.list-group-view-master {
+  transform: translateX(0px);
+  max-height: 560.5px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.list-group-none-date {
+  transform: translateX(2000px);
+  width: 0%;
+}
+.closeScroll {
+  overflow: hidden;
+}
+.list-group-view-date {
+  transform: translateX(0px);
+
+  width: 100%;
+}
+
+.list-group-view-master-left {
+  transform: translateX(-2000px);
+  width: 0%;
+}
+
+.btn-backToMaster {
+  width: 20%;
+}
+
+.btn-primary {
+  background-color: black;
+}
+
+.text-white {
+  padding: 10px;
+  background-color: rgba(1, 1, 2, 0.63);
+}
+
+.reviews {
+  color: blue;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+}
+
+.colorBl {
+  color: orange;
+}
+
+.reviewsBlock {
+  bottom: 0;
+  right: 0;
+  top: 75px;
+  width: 83%;
+  position: absolute;
+  background-color: white;
+  z-index: 300;
+  border-left: 1px solid gray;
+  transform: Scale(0, 0);
+  transition: 0.5s;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.reviewsBlock__name {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  flex-direction: column;
+  position: relative;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item__name {
+  font-weight: 700;
+}
+.btn-secondary_update {
+  width: 100%;
+}
+
+.btn-secondary_update i {
+  margin-right: 10px;
+}
+
+.reviewsBlockOpen {
+  transform: Scale(1, 1);
+}
+
+.closedIcon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.addReview {
+  padding: 20px;
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  top: 0;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.addReviewOpen {
+  z-index: 200;
+  display: block;
+  transform: translateY(0px);
+}
+
+.blockStar {
+  margin-bottom: 10px;
+}
+
+.fa-orange:hover {
+  color: orange;
+}
+
+.fa-yes-orange {
+  color: orange;
+}
+
+.addReviewError {
+  font-weight: 700;
+  color: rgba(143, 18, 18, 0.8);
+  margin-bottom: 10px;
+}
+
+.calendar__day {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.list-group-reviews {
+  overflow: hidden;
+
+  overflow-y: auto;
+}
+.calendar {
+  background-color: rgb(252, 252, 252);
+  position: relative;
+}
+
+.calendar__title {
+  border-bottom: 1px solid gray;
+  font-size: 30px;
+  font-family: monospace;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar__show {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar__days {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.week {
+  display: flex;
+  justify-content: space-around;
+  height: 9vh;
+}
+.week:first-child {
+  margin-top: 30px;
+}
+.day {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.day:hover {
+  border: 1px solid rgba(0, 0, 0, 0.507);
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  padding: 10px;
+}
+tbody {
+  position: relative;
+  z-index: 100;
+}
+
+.calendar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+.calendar__icons {
+  padding-right: 10px;
+}
+
+.calendar__icons i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.calendar__icons i:hover {
+  color: gray;
+}
+
+.dayActive {
+  background-color: rgba(0, 0, 255, 0.527);
+  border-radius: 50%;
+}
+
+.time {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.726);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.time__block {
+  height: 100%;
+  background-color: rgba(255, 254, 254, 0.815);
+  transform: translateX(350px);
+  transition: 0.5s;
+}
+
+.time__title {
+  display: flex;
+  justify-content: center;
+}
+.time__body {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+.time__number {
+  border: 1px solid black;
+  width: 100px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.time__number:hover {
+  transform: scale(1.1);
+}
+.time__title {
+  overflow: hidden;
+}
+.time__body {
+  overflow: hidden;
+  padding-top: 20px;
+}
+.time-view {
+  opacity: 1;
+  z-index: 120;
+}
+
+.time__block-view {
+  width: 41%;
+  z-index: 230;
+  transform: translateX(0px);
+}
+
+.time__number-none {
+  transform: scale(0.7);
+  opacity: 0.7;
+}
+
+.time__number-none:hover {
+  transform: scale(0.7);
+  cursor: not-allowed;
+}
+
+.mainBlockPageClient {
+  position: relative;
+  overflow: hidden;
+}
+
+.confirmBlock {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.39);
+  z-index: 1200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  transform: translateY(1000px);
+}
+
+.cardConfirm {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(255, 254, 254);
+  position: absolute;
+}
+
+.cardConfirm-body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 254, 254);
+  padding: 0;
+  height: 200px;
+}
+
+.cardConfirm-body input {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.cardConfirm-body button {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.confirmBlockView {
+  transform: translateY(0px);
+}
+
+.dangerBlock {
+  position: absolute;
+  color: red;
+  font-size: 25px;
+  top: 30px;
+  display: flex;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 3px;
+}
